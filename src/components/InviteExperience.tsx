@@ -12,6 +12,7 @@ import { Venue } from "./Venue";
 import { Closing } from "./Closing";
 import { AudioControl } from "./AudioControl";
 import { ConfettiBurst } from "./ConfettiBurst";
+import { GoldCorners } from "./GoldCorners";
 
 function InviteInner() {
   const { opened, reducedMotion } = useInvite();
@@ -54,6 +55,7 @@ function InviteInner() {
         }`}
       >
         <div className="invite-bg absolute inset-0 -z-10" />
+        {opened && <GoldCorners />}
         <HeroInvitation />
         {opened && (
           <>

@@ -30,48 +30,62 @@ body {
   font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
 }
 
-/* Closed landing / curtain fabric — subtle vertical rib like Zareqia */
+/* Closed curtains — richer soft fabric feel */
 .royal-stage,
 .royal-curtain {
   background-color: #2a0e14;
   background-image:
     radial-gradient(
+      ellipse 80% 60% at 50% 40%,
+      rgba(110, 40, 52, 0.45) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
       ellipse at center,
-      rgba(84, 27, 37, 0.55) 0%,
-      rgba(26, 10, 12, 0.95) 70%
+      rgba(84, 27, 37, 0.5) 0%,
+      rgba(26, 10, 12, 0.97) 72%
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(0, 0, 0, 0.07) 0px,
-      rgba(0, 0, 0, 0.07) 1px,
+      rgba(255, 220, 180, 0.025) 0px,
+      rgba(255, 220, 180, 0.025) 1px,
       transparent 1px,
-      transparent 4px
+      transparent 5px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.04) 0px,
+      rgba(0, 0, 0, 0.04) 2px,
+      transparent 2px,
+      transparent 7px
     );
 }
 
 .royal-curtain-left {
-  box-shadow: inset -18px 0 28px rgba(0, 0, 0, 0.35);
-  border-right: 1px solid rgba(201, 164, 92, 0.12);
+  box-shadow:
+    inset -22px 0 36px rgba(0, 0, 0, 0.42),
+    inset 0 0 60px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid rgba(201, 164, 92, 0.14);
 }
 
 .royal-curtain-right {
-  box-shadow: inset 18px 0 28px rgba(0, 0, 0, 0.35);
-  border-left: 1px solid rgba(201, 164, 92, 0.12);
+  box-shadow:
+    inset 22px 0 36px rgba(0, 0, 0, 0.42),
+    inset 0 0 60px rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(201, 164, 92, 0.14);
 }
 
-/* Post-open invite — deep navy-burgundy, calm, no stock photo chaos */
 .invite-bg {
   background-color: #0e1018;
   background-image:
     radial-gradient(
-      ellipse at 50% 20%,
-      rgba(58, 17, 22, 0.45) 0%,
+      ellipse at 50% 18%,
+      rgba(58, 17, 22, 0.42) 0%,
       transparent 55%
     ),
     linear-gradient(180deg, #14101c 0%, #0e1018 40%, #120a10 100%);
 }
 
-/* Thin gold side rails — restrained frame */
 .invite-frame::before,
 .invite-frame::after {
   content: "";
@@ -109,7 +123,6 @@ body {
   }
 }
 
-/* Mobile: avoid horizontal overflow from frames */
 @media (max-width: 374px) {
   .invite-frame::before,
   .invite-frame::after {
@@ -118,9 +131,54 @@ body {
   }
 }
 
+/* Soft gold shimmer sweep after scratch */
+@keyframes gold-shimmer {
+  0% {
+    transform: translateX(-120%) skewX(-12deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(180%) skewX(-12deg);
+    opacity: 0;
+  }
+}
+
+.gold-shimmer {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.gold-shimmer::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 40%;
+  height: 120%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(229, 208, 160, 0.08) 35%,
+    rgba(201, 164, 92, 0.35) 50%,
+    rgba(229, 208, 160, 0.08) 65%,
+    transparent 100%
+  );
+  animation: gold-shimmer 1.15s ease-out forwards;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .gold-shimmer::after {
+    animation: none;
+    display: none;
   }
 }
 

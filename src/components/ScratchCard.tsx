@@ -203,11 +203,12 @@ export function ScratchCard({ onRevealed }: ScratchCardProps) {
       <AnimatePresence>
         {revealed && (
           <motion.div
-            className="mt-10 text-center"
+            className="relative mt-10 text-center"
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
+            {!prefersReduced && <div className="gold-shimmer" aria-hidden />}
             <p className="font-[family-name:var(--font-cinzel)] text-3xl tracking-[0.12em] text-[color:var(--champagne)] sm:text-4xl">
               {WEDDING.event.dateDisplay}
             </p>

@@ -49,6 +49,15 @@ export const metadata: Metadata = {
       "Dawat-e-Valima — 31 August 2026, Mastan Vali Function Hall, Guntakal.",
     images: ["/og/invite-og.jpg"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
   robots: {
     index: false,
     follow: false,
