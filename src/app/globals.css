@@ -1,26 +1,130 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --burgundy-deep: #1a0a0c;
+  --burgundy: #2a1014;
+  --wine: #4a1820;
+  --gold: #c9a45c;
+  --champagne: #e5d0a0;
+  --ivory: #f3e8d0;
+  --dark-text: #321515;
+  --background: #1a0a0c;
+  --foreground: #f3e8d0;
+  --navy-deep: #0e1424;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-cormorant);
+  --font-display: var(--font-cinzel);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--burgundy-deep);
+  color: var(--ivory);
+  font-family: var(--font-cormorant), Georgia, "Times New Roman", serif;
+}
+
+/* Closed landing / curtain fabric — subtle vertical rib like Zareqia */
+.royal-stage,
+.royal-curtain {
+  background-color: #2a0e14;
+  background-image:
+    radial-gradient(
+      ellipse at center,
+      rgba(84, 27, 37, 0.55) 0%,
+      rgba(26, 10, 12, 0.95) 70%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.07) 0px,
+      rgba(0, 0, 0, 0.07) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+}
+
+.royal-curtain-left {
+  box-shadow: inset -18px 0 28px rgba(0, 0, 0, 0.35);
+  border-right: 1px solid rgba(201, 164, 92, 0.12);
+}
+
+.royal-curtain-right {
+  box-shadow: inset 18px 0 28px rgba(0, 0, 0, 0.35);
+  border-left: 1px solid rgba(201, 164, 92, 0.12);
+}
+
+/* Post-open invite — deep navy-burgundy, calm, no stock photo chaos */
+.invite-bg {
+  background-color: #0e1018;
+  background-image:
+    radial-gradient(
+      ellipse at 50% 20%,
+      rgba(58, 17, 22, 0.45) 0%,
+      transparent 55%
+    ),
+    linear-gradient(180deg, #14101c 0%, #0e1018 40%, #120a10 100%);
+}
+
+/* Thin gold side rails — restrained frame */
+.invite-frame::before,
+.invite-frame::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  z-index: 30;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(201, 164, 92, 0.35) 15%,
+    rgba(201, 164, 92, 0.55) 50%,
+    rgba(201, 164, 92, 0.35) 85%,
+    transparent 100%
+  );
+  opacity: 0.7;
+}
+
+.invite-frame::before {
+  left: max(10px, env(safe-area-inset-left));
+}
+
+.invite-frame::after {
+  right: max(10px, env(safe-area-inset-right));
+}
+
+@media (min-width: 480px) {
+  .invite-frame::before {
+    left: max(16px, env(safe-area-inset-left));
+  }
+  .invite-frame::after {
+    right: max(16px, env(safe-area-inset-right));
+  }
+}
+
+/* Mobile: avoid horizontal overflow from frames */
+@media (max-width: 374px) {
+  .invite-frame::before,
+  .invite-frame::after {
+    width: 1px;
+    opacity: 0.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 45%, transparent);
+  color: var(--ivory);
 }

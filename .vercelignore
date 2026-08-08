@@ -1,0 +1,9 @@
+Data-assets
+.venv
+.next
+PRD.md
+scripts
+.cursor
+AGENTS.md
+CLAUDE.md
+README.md
