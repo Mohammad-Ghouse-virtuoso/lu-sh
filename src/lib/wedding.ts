@@ -22,15 +22,16 @@ export const WEDDING = {
   invitationText: [
     "With joyful hearts, we request the honour",
     "of your presence and blessings at the",
-    "wedding ceremony of our beloved son",
+    "reception of our beloved son",
   ],
   event: {
     title: "DAWAT-E-VALIMA",
+    label: "RECEPTION",
     dateDisplay: "31 AUGUST 2026",
     day: "MONDAY",
     time: "1:00 PM",
     islamicDate: "17th Rabi-ul-Awwal, 1448 Hijri",
-    /** Asia/Kolkata wall time */
+    /** Asia/Kolkata wall time - reception day */
     isoLocal: "2026-08-31T13:00:00+05:30",
   },
   venue: {
@@ -46,7 +47,7 @@ export const WEDDING = {
     },
     {
       src: "/wedding/gallery/02-nikah.jpg",
-      alt: "Hands joined in Nikah under the blessings of the Quran",
+      alt: "Hands joined in prayer and blessing",
     },
     {
       src: "/wedding/gallery/03-quran.jpg",
@@ -61,15 +62,16 @@ export const WEDDING = {
     complimentsFrom: "WITH BEST COMPLIMENTS FROM",
     relatives: "Near & Dear",
     giftNote:
-      "Your presence is the greatest gift we could hope to receive. Kindly bring no gifts — your prayers and blessings are gift enough.",
+      "Your presence is our greatest gift. We kindly request no presents, only your prayers and blessings",
   },
   scratch: {
     tease: "A SPECIAL DATE",
     teaseSub: "AWAITS...",
     hint: "SCRATCH HERE",
+    revealLabel: "RECEPTION DATE",
   },
-  countdownLabel: "COUNTING DOWN TO THE CELEBRATION",
-  celebrationBegun: "THE CELEBRATION HAS BEGUN",
+  countdownLabel: "COUNTING DOWN TO THE RECEPTION",
+  celebrationBegun: "THE RECEPTION HAS BEGUN",
   tapToOpen: "TAP TO OPEN",
 } as const;
 

@@ -11,7 +11,7 @@ import {
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { WEDDING } from "@/lib/wedding";
 
-/** Full-bleed mood gallery — Zareqia-style soft swipe + dots */
+/** Full-bleed mood gallery - Zareqia-style soft swipe + dots */
 export function PhotoCarousel() {
   const slides = WEDDING.gallery;
   const prefersReduced = useReducedMotion();

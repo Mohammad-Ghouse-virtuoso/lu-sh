@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import { useInvite } from "./InviteProvider";
 
 /**
- * Restrained floral accents — corners + soft float only.
+ * Restrained floral accents - corners + soft float only.
  * Not a wallpaper. Luxury = negative space + a few well-placed blooms.
  */
 export function FloralAccents() {
@@ -14,7 +14,7 @@ export function FloralAccents() {
 
   return (
     <div className="pointer-events-none absolute inset-0 z-[5] overflow-hidden" aria-hidden>
-      {/* Top hanging corners — plum / blush peonies */}
+      {/* Top hanging corners - plum / blush peonies */}
       <Float reduced={reducedMotion} delay={0} className="absolute -left-6 -top-2 w-[42vw] max-w-[190px] opacity-[0.42] sm:-left-4 sm:w-[170px] sm:opacity-[0.48]">
         <Image
           src="/wedding/flowers/corner-hang.webp"
@@ -36,7 +36,7 @@ export function FloralAccents() {
         />
       </Float>
 
-      {/* Mid-page soft rose trails — right edge near names zone */}
+      {/* Mid-page soft rose trails - right edge near names zone */}
       <Float reduced={reducedMotion} delay={0.6} className="absolute right-[-18px] top-[38%] hidden w-[88px] opacity-[0.28] sm:block sm:opacity-[0.34]">
         <Image
           src="/wedding/flowers/corner-roses.webp"
@@ -58,7 +58,7 @@ export function FloralAccents() {
         />
       </Float>
 
-      {/* Bottom corners — watercolor red bouquet, soft */}
+      {/* Bottom corners - watercolor red bouquet, soft */}
       <Float reduced={reducedMotion} delay={0.4} className="absolute -bottom-2 -left-8 w-[46vw] max-w-[200px] opacity-[0.38] sm:-left-6 sm:w-[180px] sm:opacity-[0.44]">
         <Image
           src="/wedding/flowers/bouquet-red.webp"
@@ -113,7 +113,7 @@ function Float({
   );
 }
 
-/** Gold filigree divider — use between sections */
+/** Gold filigree divider - use between sections */
 export function GoldFlourish({ className = "" }: { className?: string }) {
   return (
     <div className={`mx-auto flex justify-center ${className}`} aria-hidden>

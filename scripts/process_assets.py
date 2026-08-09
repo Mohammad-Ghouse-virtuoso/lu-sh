@@ -237,7 +237,7 @@ def process_flowers() -> None:
         ("Rosa empoeirada", "garland"),
         ("Colorful arrangement with lush peonies", "hanging-bouquet"),
         ("_10 Stunning Floral", "floral-png-set"),
-        ("png", "floral-help"),  # may match many — handled carefully below
+        ("png", "floral-help"),  # may match many - handled carefully below
     ]
 
     used = set()
@@ -312,7 +312,7 @@ def process_audio() -> None:
         shutil.copy2(AUDIO_SRC, AUDIO_OUT)
         print(f"  wrote {AUDIO_OUT.relative_to(ROOT)}")
     else:
-        print("  nasheed missing — skip")
+        print("  nasheed missing - skip")
 
 
 def process_og() -> None:

@@ -1,4 +1,4 @@
-/** Subtle gold corner ornament — SVG only, Zareqia-restrained */
+/** Subtle gold corner ornament - SVG only, Zareqia-restrained */
 export function GoldCorners({ className = "" }: { className?: string }) {
   return (
     <div

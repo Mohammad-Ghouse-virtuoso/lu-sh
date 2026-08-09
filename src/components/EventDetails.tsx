@@ -14,7 +14,10 @@ export function EventDetails() {
     >
       <div className="mx-auto mb-8 h-px w-16 bg-gradient-to-r from-transparent via-[color:var(--gold)] to-transparent" />
 
-      <p className="font-[family-name:var(--font-cinzel)] text-sm tracking-[0.35em] text-[color:var(--gold)]">
+      <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.32em] text-[color:var(--champagne)]/85">
+        {WEDDING.event.label}
+      </p>
+      <p className="mt-3 font-[family-name:var(--font-cinzel)] text-sm tracking-[0.35em] text-[color:var(--gold)]">
         {WEDDING.event.title}
       </p>
       <p className="mt-6 font-[family-name:var(--font-cinzel)] text-2xl tracking-wide text-[color:var(--champagne)]">

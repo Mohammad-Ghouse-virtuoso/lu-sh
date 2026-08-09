@@ -147,7 +147,7 @@ export function ScratchCard({ onRevealed }: ScratchCardProps) {
         >
           <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
             <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.28em] text-[color:var(--wine)]">
-              WEDDING DATE
+              {WEDDING.scratch.revealLabel}
             </p>
             <p className="mt-3 font-[family-name:var(--font-cinzel)] text-2xl tracking-wide text-[color:var(--burgundy-deep)] sm:text-3xl">
               {WEDDING.event.dateDisplay}
@@ -172,7 +172,7 @@ export function ScratchCard({ onRevealed }: ScratchCardProps) {
                 onPointerMove={onPointerMove}
                 onPointerUp={onPointerUp}
                 onPointerCancel={onPointerUp}
-                aria-label="Scratch to reveal the wedding date"
+                aria-label="Scratch to reveal the reception date"
                 role="img"
               />
             )}
@@ -189,7 +189,7 @@ export function ScratchCard({ onRevealed }: ScratchCardProps) {
             }}
             className="mt-4 font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.25em] text-[color:var(--gold)] underline-offset-4 hover:underline"
           >
-            REVEAL DATE
+            REVEAL RECEPTION DATE
           </button>
         )}
 
@@ -209,7 +209,10 @@ export function ScratchCard({ onRevealed }: ScratchCardProps) {
             transition={{ duration: 0.7 }}
           >
             {!prefersReduced && <div className="gold-shimmer" aria-hidden />}
-            <p className="font-[family-name:var(--font-cinzel)] text-3xl tracking-[0.12em] text-[color:var(--champagne)] sm:text-4xl">
+            <p className="font-[family-name:var(--font-cinzel)] text-[10px] tracking-[0.3em] text-[color:var(--gold)]">
+              {WEDDING.event.label}
+            </p>
+            <p className="mt-3 font-[family-name:var(--font-cinzel)] text-3xl tracking-[0.12em] text-[color:var(--champagne)] sm:text-4xl">
               {WEDDING.event.dateDisplay}
             </p>
             <p className="mt-3 font-[family-name:var(--font-cormorant)] text-lg text-[color:var(--ivory)]">

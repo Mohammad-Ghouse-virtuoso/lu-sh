@@ -16,7 +16,7 @@ export function CurtainOpening() {
       className={`fixed inset-0 z-50 ${opened ? "pointer-events-none" : ""}`}
       aria-hidden={opened}
     >
-      {/* Closed stage — solid royal maroon */}
+      {/* Closed stage - solid royal maroon */}
       <motion.div
         className="absolute inset-0 z-0 royal-stage"
         initial={false}
@@ -65,7 +65,7 @@ export function CurtainOpening() {
         transition={{ duration: 0.35 }}
       />
 
-      {/* Circular TAP TO OPEN — Zareqia pattern */}
+      {/* Circular TAP TO OPEN - Zareqia pattern */}
       <motion.div
         className="absolute inset-0 z-40 flex items-center justify-center"
         initial={false}

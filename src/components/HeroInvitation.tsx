@@ -6,7 +6,7 @@ import { WEDDING } from "@/lib/wedding";
 import { useInvite } from "./InviteProvider";
 import { GoldFlourish } from "./FloralAccents";
 
-/** Clean Zareqia-inspired hero — printed-card spacing */
+/** Clean Zareqia-inspired hero - printed-card spacing */
 export function HeroInvitation() {
   const { opened } = useInvite();
   const [showScroll, setShowScroll] = useState(true);

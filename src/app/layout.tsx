@@ -26,12 +26,12 @@ export const metadata: Metadata = {
   title:
     "Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu | Wedding Invitation",
   description:
-    "You are warmly invited to celebrate the Dawat-e-Valima of Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu on 31 August 2026.",
+    "You are warmly invited to the reception (Dawat-e-Valima) of Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu on 31 August 2026.",
   openGraph: {
     title:
       "Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu | Wedding Invitation",
     description:
-      "You are warmly invited to celebrate the Dawat-e-Valima of Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu on 31 August 2026.",
+      "You are warmly invited to the reception (Dawat-e-Valima) of Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu on 31 August 2026.",
     images: [
       {
         url: "/og/invite-og.jpg",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lukhman & Shaheen | Wedding Invitation",
     description:
-      "Dawat-e-Valima — 31 August 2026, Mastan Vali Function Hall, Guntakal.",
+      "Reception (Dawat-e-Valima) - 31 August 2026, Mastan Vali Function Hall, Guntakal.",
     images: ["/og/invite-og.jpg"],
   },
   icons: {
