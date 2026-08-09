@@ -31,16 +31,28 @@ export function HeroInvitation() {
           opened ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
         }`}
       >
-        <Image
-          src="/wedding/calligraphy/bismillah.png"
-          alt="Bismillah"
-          width={340}
-          height={120}
-          priority
-          className="mb-8 h-auto w-[min(82vw,340px)] object-contain drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)]"
-        />
+        <div className="relative mb-3 flex w-full flex-col items-center">
+          <Image
+            src="/wedding/ornaments/crescent-lamp.webp"
+            alt=""
+            width={120}
+            height={153}
+            priority
+            className="relative z-[1] mb-1 h-auto w-[min(28vw,110px)] object-contain drop-shadow-[0_0_18px_rgba(201,164,92,0.35)]"
+            draggable={false}
+          />
+          <Image
+            src="/wedding/calligraphy/bismillah.webp"
+            alt="Bismillah ir-Rahman ir-Rahim"
+            width={520}
+            height={200}
+            priority
+            className="relative z-[1] h-auto w-[min(92vw,400px)] object-contain drop-shadow-[0_4px_18px_rgba(0,0,0,0.55)]"
+            draggable={false}
+          />
+        </div>
 
-        <p className="max-w-[22ch] font-[family-name:var(--font-cormorant)] text-[0.95rem] leading-relaxed text-[color:var(--ivory)]/88 sm:max-w-none sm:text-base">
+        <p className="mt-5 max-w-[22ch] font-[family-name:var(--font-cormorant)] text-[0.95rem] leading-relaxed text-[color:var(--ivory)]/88 sm:max-w-none sm:text-base">
           {WEDDING.openingBlessing.line1}
           <br />
           {WEDDING.openingBlessing.line2}

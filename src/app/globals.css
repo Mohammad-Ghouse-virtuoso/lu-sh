@@ -86,6 +86,19 @@ body {
     linear-gradient(180deg, #14101c 0%, #0e1018 40%, #120a10 100%);
 }
 
+/* Soft printed paper / velvet grain - luxury without noise */
+.invite-bg::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background-image: url("/wedding/textures/invite-grain.webp");
+  background-size: 420px 420px;
+  background-repeat: repeat;
+  opacity: 0.22;
+  mix-blend-mode: soft-light;
+}
+
 .invite-frame::before,
 .invite-frame::after {
   content: "";

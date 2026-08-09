@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         url: "/og/invite-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Lukhman & Shaheen Wedding Invitation",
+        alt: "Lukhman & Shaheen Reception Invitation",
       },
     ],
     type: "website",
