@@ -9,10 +9,12 @@ import { ScratchCard } from "./ScratchCard";
 import { Countdown } from "./Countdown";
 import { EventDetails } from "./EventDetails";
 import { Venue } from "./Venue";
+import { PhotoCarousel } from "./PhotoCarousel";
 import { Closing } from "./Closing";
 import { AudioControl } from "./AudioControl";
 import { ConfettiBurst } from "./ConfettiBurst";
 import { GoldCorners } from "./GoldCorners";
+import { FloralAccents } from "./FloralAccents";
 
 function InviteInner() {
   const { opened, reducedMotion } = useInvite();
@@ -56,6 +58,7 @@ function InviteInner() {
       >
         <div className="invite-bg absolute inset-0 -z-10" />
         {opened && <GoldCorners />}
+        {opened && <FloralAccents />}
         <HeroInvitation />
         {opened && (
           <>
@@ -67,6 +70,7 @@ function InviteInner() {
               </>
             )}
             <Venue />
+            <PhotoCarousel />
             <Closing />
           </>
         )}

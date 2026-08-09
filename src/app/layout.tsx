@@ -69,8 +69,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${cinzel.variable} ${cormorant.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full overflow-x-hidden bg-[color:var(--burgundy-deep)] text-[color:var(--ivory)]">
+      <body
+        className="min-h-full overflow-x-hidden bg-[color:var(--burgundy-deep)] text-[color:var(--ivory)]"
+        suppressHydrationWarning
+      >
         {children}
       </body>
     </html>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { WEDDING } from "@/lib/wedding";
 import { useInvite } from "./InviteProvider";
+import { GoldFlourish } from "./FloralAccents";
 
 /** Clean Zareqia-inspired hero — printed-card spacing */
 export function HeroInvitation() {
@@ -45,7 +46,9 @@ export function HeroInvitation() {
           {WEDDING.openingBlessing.line2}
         </p>
 
-        <div className="my-7 h-px w-14 bg-gradient-to-r from-transparent via-[color:var(--gold)] to-transparent" />
+        <div className="my-7">
+          <GoldFlourish />
+        </div>
 
         <p className="font-[family-name:var(--font-cinzel)] text-[9px] tracking-[0.3em] text-[color:var(--gold)] sm:text-[10px]">
           {WEDDING.blessingHeading}
@@ -57,6 +60,9 @@ export function HeroInvitation() {
         <p className="mt-7 font-[family-name:var(--font-cormorant)] text-base text-[color:var(--ivory)] sm:text-lg">
           {WEDDING.parents}
         </p>
+        <p className="mt-1.5 max-w-[28ch] font-[family-name:var(--font-cormorant)] text-sm text-[color:var(--champagne)]/80 sm:max-w-none">
+          {WEDDING.parentsDesignation}
+        </p>
 
         <div className="mt-6 max-w-xs space-y-0.5 font-[family-name:var(--font-cormorant)] text-sm italic leading-relaxed text-[color:var(--ivory)]/75">
           {WEDDING.invitationText.map((line) => (
@@ -64,11 +70,16 @@ export function HeroInvitation() {
           ))}
         </div>
 
-        <div className="my-8 h-px w-14 bg-gradient-to-r from-transparent via-[color:var(--gold)] to-transparent" />
+        <div className="my-8">
+          <GoldFlourish />
+        </div>
 
         <h1 className="max-w-[16ch] font-[family-name:var(--font-cinzel)] text-[1.4rem] leading-[1.35] tracking-[0.04em] text-[color:var(--champagne)] sm:max-w-none sm:text-[1.85rem]">
           {WEDDING.groom.fullName}
         </h1>
+        <p className="mt-2 max-w-[26ch] font-[family-name:var(--font-cormorant)] text-sm text-[color:var(--ivory)]/70 sm:max-w-none">
+          {WEDDING.groom.designation}
+        </p>
 
         <p className="my-3.5 font-[family-name:var(--font-cormorant)] text-2xl text-[color:var(--gold)]">
           &
@@ -77,6 +88,9 @@ export function HeroInvitation() {
         <h2 className="max-w-[16ch] font-[family-name:var(--font-cinzel)] text-[1.4rem] leading-[1.35] tracking-[0.04em] text-[color:var(--champagne)] sm:max-w-none sm:text-[1.85rem]">
           {WEDDING.bride.fullName}
         </h2>
+        <p className="mt-2 font-[family-name:var(--font-cormorant)] text-sm text-[color:var(--ivory)]/70">
+          {WEDDING.bride.designation}
+        </p>
 
         {opened && (
           <p
