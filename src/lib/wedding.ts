@@ -7,7 +7,7 @@ export const WEDDING = {
   bride: {
     fullName: "Shaik Shaheen Banu",
     shortName: "Shaheen",
-    designation: "Alimah",
+    designation: "Moulviyah",
   },
   parents: "Mr. & Mrs. Shaik Shaiksha Vali",
   /** Father of the groom (host) */
