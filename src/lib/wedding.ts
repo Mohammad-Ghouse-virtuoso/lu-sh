@@ -5,8 +5,8 @@ export const WEDDING = {
     designation: "MCA, Manager in Energy India",
   },
   bride: {
-    fullName: "Shaik Shaheen Banu",
-    shortName: "Shaheen",
+    fullName: "Noor-E-Ayen",
+    shortName: "Noor",
     designation: "Moulviyah",
   },
   parents: "Mr. & Mrs. Shaik Shaiksha Vali",

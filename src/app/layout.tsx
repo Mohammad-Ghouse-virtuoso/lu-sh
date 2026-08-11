@@ -24,27 +24,27 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title:
-    "Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu | Wedding Invitation",
+    "Shaik Mohammad Lukhman-E-Hayath & Noor-E-Ayen | Wedding Invitation",
   description:
-    "You are warmly invited to the reception (Dawat-e-Valima) of Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu on 31 August 2026.",
+    "You are warmly invited to the reception (Dawat-e-Valima) of Shaik Mohammad Lukhman-E-Hayath & Noor-E-Ayen on 31 August 2026.",
   openGraph: {
     title:
-      "Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu | Wedding Invitation",
+      "Shaik Mohammad Lukhman-E-Hayath & Noor-E-Ayen | Wedding Invitation",
     description:
-      "You are warmly invited to the reception (Dawat-e-Valima) of Shaik Mohammad Lukhman-E-Hayath & Shaik Shaheen Banu on 31 August 2026.",
+      "You are warmly invited to the reception (Dawat-e-Valima) of Shaik Mohammad Lukhman-E-Hayath & Noor-E-Ayen on 31 August 2026.",
     images: [
       {
         url: "/og/invite-og.jpg",
         width: 1200,
         height: 630,
-        alt: "Lukhman & Shaheen Reception Invitation",
+        alt: "Lukhman & Noor-E-Ayen Reception Invitation",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lukhman & Shaheen | Wedding Invitation",
+    title: "Lukhman & Noor-E-Ayen | Wedding Invitation",
     description:
       "Reception (Dawat-e-Valima) - 31 August 2026, Mastan Vali Function Hall, Guntakal.",
     images: ["/og/invite-og.jpg"],
